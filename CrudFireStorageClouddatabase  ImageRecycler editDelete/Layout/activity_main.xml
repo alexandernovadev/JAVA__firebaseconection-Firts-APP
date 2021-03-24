@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Choose file"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ProgressBar
+        android:id="@+id/progresbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mainnombre"
+        android:layout_width="332dp"
+        android:layout_height="71dp"
+        app:layout_constraintTop_toBottomOf="@+id/inputDesingnombre">
+
+        <EditText
+            android:id="@+id/ed_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/apellido"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mainapellido"
+        android:layout_width="332dp"
+        android:layout_height="71dp"
+        app:layout_constraintTop_toBottomOf="@+id/inputDesingnombre">
+
+        <EditText
+            android:id="@+id/ed_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/apellido"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click_btn"
+        android:text="Enviar" />
+
+    <Button
+        android:id="@+id/btn_actividos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btn_verdatos"
+        android:text="Ver Datos" />
+
+
+</LinearLayout>

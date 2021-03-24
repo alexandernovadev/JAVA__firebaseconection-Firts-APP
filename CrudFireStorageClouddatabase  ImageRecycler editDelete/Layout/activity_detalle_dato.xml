@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleDato">
+
+
+    <ImageView
+        android:id="@+id/btnedit_detalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_detele_detalle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/btn_detele_detalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/btnback_detalles"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flechatras" />
+
+    <ImageView
+        android:id="@+id/foto_detalle"
+        android:layout_width="359dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_light" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputDesingnombre"
+        android:layout_width="324dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:textColorHint="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foto_detalle">
+
+        <EditText
+            android:id="@+id/nombre_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textCapSentences"
+            android:hint="@string/nombre"
+            android:singleLine="true"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputDesingapellido"
+        android:layout_width="332dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:textColorHint="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDesingnombre">
+
+        <EditText
+            android:id="@+id/apellido_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textCapSentences"
+            android:hint="@string/apellido"
+            android:singleLine="true"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/id_detalle"
+        android:layout_width="330dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="ID"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDesingapellido" />
+
+
+</android.support.constraint.ConstraintLayout>
